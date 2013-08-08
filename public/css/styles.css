@@ -1,0 +1,51 @@
+body {
+    background-color: #efefef;
+    font-size: 18px;
+    line-height: 26px;
+}
+.wrap {
+    width: 75%;
+    margin: 30px auto;
+}
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tasklist {
+    width: 60%;
+    margin: 30px auto 50px;
+}
+.icon {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 40px;
+    line-height: 40px;
+    vertical-align: text-top;
+    padding: 1px 5px 5px 5px;
+    cursor: default;
+}
+.project_icon { background-color: #8FAEEA; transition: all 600ms; }
+.area_icon { background-color: #E48282; transition: all 600ms; }
+.project_icon:hover { background-color: #06238F; transition: all 300ms; }
+.area_icon:hover { background-color: #8F0606; transition: all 300ms; }
+.task_title {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    body { font-size: 16px; line-height: 24px; }
+    .wrap { width: 90%; }
+    h1 { font-size: 4em; }
+    .tasklist { width: 90%; }
+}

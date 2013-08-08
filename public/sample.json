@@ -1,0 +1,46 @@
+{
+    "unique": [
+        {
+            "name": "Buy groceries",
+            "done": true,
+            "section": null,
+            "_id": "5203c4d40086c8998a000001"
+        }
+    ],
+    "project": [
+        {
+            "_id": "5203c4d4d6ace503edf8b457",
+            "name": "BERG Little Printer",
+            "tasks": [
+                {
+                    "name": "Admire how cool this thing is",
+                    "done": true,
+                    "section": "5203c4d4d6ace503edf8b457",
+                    "_id":"5203c4d40086c8998a000004"
+                },
+                {
+                    "name": "Finish up the documentation",
+                    "done": false,
+                    "section": "5203c4d4d6ace503edf8b457",
+                    "_id":"5203c4d40086c8998a000004"
+                }
+            ]
+        }
+    ],
+    "area": [
+        {
+            "_id": "5203c4d4d6ace503edf8b458",
+            "name": "Work",
+            "tasks": [
+                {
+                    "name": "Learn Angular.js",
+                    "done": false,
+                    "section": "5203c4d4d6ace503edf8b458",
+                    "_id": "5203c4d40086c8998a000005"
+                }
+            ]
+        }
+    ]
+}
+
+

@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="/scripts"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <section class="wrap">
+            <h1>Read-Only Todo List</h1>
+            <div ng-controller="TodoCtrl">
+                <div class="unique_tasks">
+                    <ul class="unstyled tasklist">
+                        <li ng-repeat="task in uniquetasks">
+                            <input type="checkbox" ng-model="task.done" disabled>
+                            <span class="task_title done-{{task.done}}">{{task.name}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project_tasks">
+                    <ul class="unstyled">
+                        <li ng-repeat="project in projects">
+                            <h2><span class="icon project_icon" title="Project">※</span> {{project.name}}</h2>
+                            <ul class="unstyled tasklist">
+                                <li ng-repeat="task in project.tasks">
+                                    <input type="checkbox" ng-model="task.done" disabled>
+                                    <span class="task_title done-{{task.done}}">{{task.name}}</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="area_tasks">
+                    <ul class="unstyled">
+                        <li ng-repeat="area in areas">
+                            <h2><span class="icon area_icon" title="Area">※</span> {{area.name}}</h2>
+                            <ul class="unstyled tasklist">
+                                <li ng-repeat="task in area.tasks">
+                                    <input type="checkbox" ng-model="task.done" disabled>
+                                    <span class="task_title done-{{task.done}}">{{task.name}}</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

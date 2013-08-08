@@ -1,0 +1,9 @@
+{
+    "owner_email":"nelson@yoshokatana.com",
+    "publication_api_version":"1.0",
+    "name": "Little Things",
+    "description": "A quick overview of your todos from Things",
+    "delivered_on":"clicking submit on littlethings.yosho.me",
+    "external_configuration": false,
+    "delivery_type":"push"
+}
