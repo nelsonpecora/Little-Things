@@ -18,4 +18,5 @@ A simple webapp that displays tasks from Things (my todo list app) and allows me
 * Abstract out some of the database lookups, so the front-end app and Little Printer endpoints are more DRY
 * Add OAUTH to make everything secure and make my life easier (using the Passport module)
 * Add "Print Now" button to the webapp
+* Switch out Mongojs for Mongoose, since it's more widely supported
 * Maybe do more work on the Applescript and make it more robust
